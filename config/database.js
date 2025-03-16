@@ -5,6 +5,8 @@ const sequelize = new Sequelize(db.name, db.user, db.password, {
   host: db.host,
   dialect: db.dialect || "mysql", // Change to "postgres" if using PostgreSQL
   logging: false,
+  password: db.password,
+
 
   
 });
